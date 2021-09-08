@@ -1,0 +1,8 @@
+.logobar {
+  width: 60px;
+}
+.dropdownlogo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
