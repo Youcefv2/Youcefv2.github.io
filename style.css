@@ -7,9 +7,6 @@ body {
   font-size: 100%;
 }
 main {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
   color: grey;
 }
 /*********************************************************************************************
@@ -19,6 +16,7 @@ main {
   background-image: url("img/pexels-kevin-ku-577585.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   margin-top: -20px;
   text-align: center;
@@ -74,6 +72,10 @@ header nav ul li a {
     display: block;
     text-align: center;
     padding: 0;
+    position: sticky;
+  }
+  .mobile {
+    display: none;
   }
   header nav ul li a i {
     font-size: 25px;
@@ -235,6 +237,11 @@ article img {
 .timeline {
   background-color: blanchedalmond;
   padding-bottom: 10px;
+  background-size: 200%;
+}
+.mid {
+  margin-right: auto;
+  margin-left: auto;
 }
 .main-timeline {
   position: relative;

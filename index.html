@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
@@ -25,6 +33,11 @@
     <link rel="stylesheet" href="style.css" />
     <title>Romain Benyoucef dev junior</title>
   </head>
+  <!--
+  
+header
+
+-->
   <body>
     <div id="intro">
       <p style="visibility: hidden">.</p>
@@ -38,8 +51,8 @@
       <nav>
         <ul>
           <li class="navzoom"><a href="#acceuil">Acceuil</a></li>
-          <li class="navzoom"><a href="#projets">Projets</a></li>
-          <li class="navzoom"><a href="#contact">Contact</a></li>
+          <li class="navzoom mobile"><a href="#projets">Projets</a></li>
+          <li class="navzoom mobile"><a href="#contact">Contact</a></li>
           <li class="reseaux">
             <div class="navzoom">
               <a href="https://github.com/Youcefv2" target="_blank"
@@ -62,7 +75,11 @@
         </ul>
       </nav>
     </header>
+    <!--
+  
+presentation
 
+-->
     <main>
       <section id="acceuil">
         <div class="presentation">
@@ -101,6 +118,11 @@
         <div></div>
       </section>
 
+      <!--
+  
+timeprojet
+
+-->
       <section class="projettitle" id="projets">
         <h2>Mes projets :</h2>
         <div class="container">
@@ -165,101 +187,100 @@
           </article>
         </div>
       </section>
+      <!--
 
+timeline 
+
+-->
       <section class="timeline">
-        <div class="container">
-          <div class="main-timeline">
-            <!-- start experience section-->
-            <div class="timeline">
-              <div class="icon"></div>
-              <div class="date-content">
-                <div class="date-outer">
-                  <span class="date">
-                    <span class="month">2 Years</span>
-                    <span class="year">2013</span>
-                  </span>
+        <div class="mid">
+          <div class="container">
+            <div class="main-timeline">
+              <!-- start experience section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="year">2017</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">Baccalauréat ES</h5>
+                  <p class="description">
+                    C'est en 20217 que j'obtiens mon baccalauréat est spécialité
+                    mathématique
+                  </p>
                 </div>
               </div>
-              <div class="timeline-content">
-                <h5 class="title">Visual Art &amp; Design</h5>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
-                  erat volutpat. Aenean interdum finibus efficitur. Praesent
-                  dapibus dolor felis, eu ultrices elit molestie.
-                </p>
-              </div>
-            </div>
-            <!-- end experience section-->
+              <!-- end experience section-->
 
-            <!-- start experience section-->
-            <div class="timeline">
-              <div class="icon"></div>
-              <div class="date-content">
-                <div class="date-outer">
-                  <span class="date">
-                    <span class="month">1 Years</span>
-                    <span class="year">2015</span>
-                  </span>
+              <!-- start experience section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="year">2017</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">Employé</h5>
+                  <p class="description">
+                    Peu après l'obtention de mon bac j'obtiens mon prenier petit
+                    boulot chez brico-dépôt qui m'a permis de découvrir le
+                    milieu professionnel
+                  </p>
                 </div>
               </div>
-              <div class="timeline-content">
-                <h5 class="title">Product Designer</h5>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
-                  erat volutpat. Aenean interdum finibus efficitur. Praesent
-                  dapibus dolor felis, eu ultrices elit molestie.
-                </p>
-              </div>
-            </div>
-            <!-- end experience section-->
+              <!-- end experience section-->
 
-            <!-- start experience section-->
-            <div class="timeline">
-              <div class="icon"></div>
-              <div class="date-content">
-                <div class="date-outer">
-                  <span class="date">
-                    <span class="month">2 Years</span>
-                    <span class="year">2016</span>
-                  </span>
+              <!-- start experience section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="year">2020</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">BTS technico-commercial</h5>
+                  <p class="description">
+                    En 2020 j'obtiens mon BTS technico-commercial, durant lequel
+                    j'ai pu me forger une nouvelle expérience professionnelle
+                    chez HBC Aménagements qui ont eu la gentillesse de
+                    m'accueillir en stage pour une durée de 14 semaines.
+                  </p>
                 </div>
               </div>
-              <div class="timeline-content">
-                <h5 class="title">Web Designer</h5>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
-                  erat volutpat. Aenean interdum finibus efficitur. Praesent
-                  dapibus dolor felis, eu ultrices elit molestie.
-                </p>
-              </div>
-            </div>
-            <!-- end experience section-->
+              <!-- end experience section-->
 
-            <!-- start experience section-->
-            <div class="timeline">
-              <div class="icon"></div>
-              <div class="date-content">
-                <div class="date-outer">
-                  <span class="date">
-                    <span class="month">2 Years</span>
-                    <span class="year">2018</span>
-                  </span>
+              <!-- start experience section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="year">2021</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">Developpeur web</h5>
+                  <p class="description">
+                    C'est en 2021 que je découvre la programmation, lasse des
+                    outils no-code je decide de me former aux langages du web et
+                    pour cela je m'inscris au boot camp développeur full stack
+                    proposé par les 3 wrh
+                  </p>
                 </div>
               </div>
-              <div class="timeline-content">
-                <h5 class="title">Graphic Designer</h5>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
-                  erat volutpat. Aenean interdum finibus efficitur. Praesent
-                  dapibus dolor felis, eu ultrices elit molestie.
-                </p>
-              </div>
+              <!-- end experience section-->
             </div>
-            <!-- end experience section-->
           </div>
         </div>
       </section>
