@@ -1,284 +1,660 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Template:	 Unika - Responsive One Page HTML5 Template
+	Author:		 imransdesign.com
+	URL:		 http://imransdesign.com/
+    Designed By: https://www.behance.net/poljakova
+	Version:	1.0	
+-->
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+    <title>Romain Benyoucef - Développeur Web Junior</title>
+    <meta
+      name="description"
+      content="Unika - Responsive One Page HTML5 Template"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
-      rel="stylesheet"
+    <meta
+      name="keywords"
+      content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio"
     />
+    <meta name="author" content="imransdesign.com" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts  -->
     <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,700,500"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Body font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      href="http://fonts.googleapis.com/css?family=Lato:300,400"
       rel="stylesheet"
+      type="text/css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Romain Benyoucef dev junior</title>
+    <!-- Navbar font -->
+
+    <!-- Libs and Plugins CSS -->
+    <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="inc/animations/css/animate.min.css" />
+    <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css" />
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css" />
+    <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skin/cool-gray.css" />
+    <!-- <link rel="stylesheet" href="css/skin/ice-blue.css"> -->
+    <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
+    <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
+    <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <!--
-  
-header version 13:30
 
--->
-  <body>
-    <div id="intro">
-      <p style="visibility: hidden">.</p>
-      <div id="info">
-        <h2>Presentation</h2>
-        <h1>Romain Benyoucef</h1>
-        <h3>Développeur web junior</h3>
-      </div>
-    </div>
-    <header>
-      <nav>
-        <ul>
-          <li class="navzoom"><a href="#acceuil">Acceuil</a></li>
-          <li class="navzoom mobile"><a href="#projets">Projets</a></li>
-          <li class="navzoom mobile"><a href="#contact">Contact</a></li>
-          <li class="reseaux">
-            <div class="navzoom">
-              <a href="https://github.com/Youcefv2" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="navzoom">
-              <a
-                href="https://www.linkedin.com/in/romain-benyoucef-b12464219/"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-            <div class="navzoom">
-              <a href="mailto:romain.benyoucef@gmail.com" target="_blank"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--
-  
-presentation
+  <body data-spy="scroll" data-target="#main-navbar">
+    <div class="page-loader"></div>
+    <!-- Display loading image while page loads -->
+    <div class="body">
+      <!--========== BEGIN HEADER ==========-->
+      <header id="header" class="header-main">
+        <!-- Begin Navbar -->
+        <nav
+          id="main-navbar"
+          class="navbar navbar-default navbar-fixed-top"
+          role="navigation"
+        >
+          <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
 
--->
-    <main>
-      <section id="acceuil">
-        <div class="presentation">
-          <img
-            src="img\Snapchat-1573441580_2.jpg"
-            alt="ma tete"
-            class="floatright"
-          />
-          <h1>Découvrez en plus à propos de moi.</h1>
-          <h3>Developpeur web junior</h3>
-          <p>
-            Je me presente je m'appele Romain je suis un etudiant de 22 ans, je
-            suis a la recherche d'un contrat en alternance en tant que
-            developpeur. J'ai decouvert le code tres recement en juin 2021
-          </p>
-          <p>Mon portfolio est pour le moment en cours de construction</p>
-          <br />
-          <div class="clearboth"><p></p></div>
-          <section id="contact">
-            <h2>Me contacter</h2>
-            <p>
-              Vous pouvez me contacter par mail a l'adresse suivante :
-              <a href="romain.benyoucef@gmail.com">romain.benyoucef@gmail.com</a
-              ><br />
-              Vous pouvez aussi me contacter grace a
-              <a href="https://www.linkedin.com/in/romain-benyoucef-b12464219/"
-                >linkedin</a
-              >
-            </p>
-          </section>
-        </div>
-        <div></div>
-      </section>
-
-      <!--
-  
-timeprojet
-
--->
-      <section class="projettitle" id="projets">
-        <h2>Mes projets :</h2>
-        <div class="container">
-          <article class="projet">
-            <a href="#">
-              <div class="img-hover-zoom">
-                <img src="projet\tipcalc.png" alt="img presentation" />
-              </div>
-              <h3 class="articleTitle">Tip calculator</h3>
-              <p class="articlep">
-                TipCalculator est un outil permetant de calculer le pourboire
-                lorsque vous etes au restaurant avec plusieurs personnes par
-                exemple.
-              </p>
-              <div class="techno">
-                <ul>
-                  <li><i class="fas fa-circle"></i> HTML</li>
-                  <li><i class="fas fa-circle"></i> CSS</li>
-                  <li><i class="fas fa-circle"></i> JS</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <article class="projet">
-            <a href="#">
-              <div class="img-hover-zoom">
-                <img src="projet\seoul tour.gif" alt="" />
-              </div>
-              <h3 class="articleTitle">SeoulTour</h3>
-              <p class="articlep">
-                SeoulTour est le site d'un guide de voyage basé à Seoul. Il lui
-                permet d'afficher ses tarifs et d'ecrire des articles sur la vie
-                à seoul.
-              </p>
-              <div class="techno">
-                <ul>
-                  <li><i class="fas fa-circle"></i> WORDPRESS</li>
-                  <li><i class="fas fa-circle"></i> CSS</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <article class="projet">
-            <a href="#">
-              <div class="img-hover-zoom">
-                <img src="projet\lolesportstats.gif" alt="" />
-              </div>
-              <h3 class="articleTitle">League of legends Esport Stats</h3>
-              <div class="techno">
-                <ul>
-                  <li><i class="fas fa-circle"></i> HTML</li>
-                  <li><i class="fas fa-circle"></i> CSS</li>
-                  <li><i class="fas fa-circle"></i> JS</li>
-                  <li><i class="fas fa-circle"></i> BOOTSTRAP</li>
-                  <li><i class="fas fa-circle"></i> PHP</li>
-                  <li><i class="fas fa-circle"></i> SYMFONY</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-        </div>
-      </section>
-      <!--
-
-timeline 
-
--->
-      <section class="timeline">
-        <div class="mid">
           <div class="container">
-            <div class="main-timeline">
-              <!-- start experience section-->
-              <div class="timeline">
-                <div class="icon"></div>
-                <div class="date-content">
-                  <div class="date-outer">
-                    <span class="date">
-                      <span class="year">2017</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="timeline-content">
-                  <h5 class="title">Baccalauréat ES</h5>
-                  <p class="description">
-                    C'est en 20217 que j'obtiens mon baccalauréat est spécialité
-                    mathématique
-                  </p>
-                </div>
-              </div>
-              <!-- end experience section-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+              >
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="index.html"
+                >Romain Benyoucef</a
+              >
+            </div>
 
-              <!-- start experience section-->
-              <div class="timeline">
-                <div class="icon"></div>
-                <div class="date-content">
-                  <div class="date-outer">
-                    <span class="date">
-                      <span class="year">2017</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="timeline-content">
-                  <h5 class="title">Employé</h5>
-                  <p class="description">
-                    Peu après l'obtention de mon bac j'obtiens mon prenier petit
-                    boulot chez brico-dépôt qui m'a permis de découvrir le
-                    milieu professionnel
-                  </p>
-                </div>
-              </div>
-              <!-- end experience section-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="body">Accueil</a></li>
+                <li><a class="page-scroll" href="#about-section">A propos</a></li>
+                <li>
+                  <a class="page-scroll" href="#portfolio-section">Mes projets</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#contact-section">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+        </nav>
+        <!-- End Navbar -->
+      </header>
+      <!-- ========= END HEADER =========-->
 
-              <!-- start experience section-->
-              <div class="timeline">
-                <div class="icon"></div>
-                <div class="date-content">
-                  <div class="date-outer">
-                    <span class="date">
-                      <span class="year">2020</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="timeline-content">
-                  <h5 class="title">BTS technico-commercial</h5>
-                  <p class="description">
-                    En 2020 j'obtiens mon BTS technico-commercial, durant lequel
-                    j'ai pu me forger une nouvelle expérience professionnelle
-                    chez HBC Aménagements qui ont eu la gentillesse de
-                    m'accueillir en stage pour une durée de 14 semaines.
-                  </p>
-                </div>
+      <!-- Begin text carousel intro section -->
+      <section
+        id="text-carousel-intro-section"
+        class="parallax"
+        data-stellar-background-ratio="0.5"
+        style="background-image: url(img/slider-bg.jpg)"
+      >
+        <div class="container">
+          <div class="caption text-center text-white" data-stellar-ratio="0.7">
+            <div id="owl-intro-text" class="owl-carousel">
+              <div class="item">
+                <h1>Romain Benyoucef</h1>
+                <p>Développeur Web Junior</p>
+                <div class="extra-space-l"></div>
+                <a class="btn btn-blank" href="#about-section" role="button"
+                  >En savoir plus !</a
+                >
               </div>
-              <!-- end experience section-->
+              <div class="item">
+                <h1>Decouvrez mes projets</h1>
+                <div class="extra-space-l"></div>
+                <a class="btn btn-blank" href="#portfolio-section" role="button"
+                  >En savoir plus !</a
+                >
+              </div>
+              <div class="item">
+                <h1>Contact</h1>
+                <p>Contactez moi !</p>
+                <div class="extra-space-l"></div>
+                <a class="btn btn-blank" href="#contact-section" role="button"
+                  >En savoir plus !</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- /.caption -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- End text carousel intro section -->
 
-              <!-- start experience section-->
-              <div class="timeline">
-                <div class="icon"></div>
-                <div class="date-content">
-                  <div class="date-outer">
-                    <span class="date">
-                      <span class="year">2021</span>
-                    </span>
+      <!-- Begin about section -->
+      <section id="about-section" class="page bg-style1">
+        <!-- Begin page header-->
+        <div class="page-header-wrapper">
+          <div class="container">
+            <div
+              class="page-header text-center wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <h2>A propos de moi</h2>
+              <div class="devider"></div>
+              <p class="subtitle">Développeur Web Junior</p>
+            </div>
+          </div>
+        </div>
+        <!-- End page header-->
+
+        <!-- Begin rotate box-1 -->
+        <div class="rotate-box-1-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <a
+                  class="rotate-box-1 square-icon wow zoomIn"
+                  data-wow-delay="0"
+                >
+                  <span class="rotate-box-icon"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                  <div class="rotate-box-info">
+                    <h4>Qui je suis ?</h4>
+                    <p>
+                      Je me présente je m'appelle Romain Benyoucef je suis
+                      actuellement à la recherche d'une alternance en tant que
+                      développeur junior, j'ai découvert le code il y a peu de
+                      temps en juin 2021, je viens de terminer un boot camp avec
+                      la 3wrh en tant que développeur full stack, ce qui m'a
+                      permis de découvrir plusieurs langages (html, css, js,
+                      php) ainsi que les framework Vue.js et Symfony.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <a
+                  class="rotate-box-1 square-icon wow zoomIn"
+                  data-wow-delay="0.2s"
+                >
+                  <span class="rotate-box-icon"
+                    ><i class="fa fa-code"></i
+                  ></span>
+                  <div class="rotate-box-info">
+                    <h4>Ce que je fais ?</h4>
+                    <p>
+                      Je fais principalement de l'integration et du
+                      developpement web, je ne suis pas encore a l'aise avec
+                      l'ux/ui design pour le moment. J'ai une petite exeprience
+                      avec le Javascript, le PHP, ainsi que leur framework
+                      respectif Vue et Symfony. J'ai aussi eu l'occasion
+                      d'utiliser WordPress.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <a
+                  class="rotate-box-1 square-icon wow zoomIn"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="rotate-box-icon"
+                    ><i class="fa fa-heart"></i
+                  ></span>
+                  <div class="rotate-box-info">
+                    <h4>Ce que j'aime ?</h4>
+                    <p>
+                      J'aime le code car il me permet d'apporter une solution à
+                      presque chaque problème, de plus il me permet de
+                      travailler dans des domaines que j'aime sans avoir de
+                      connaissance précise dans ceux-ci, par exemple
+                      l'automobile, le jeu vidéo, l'Esport, etc.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <a
+                  class="rotate-box-1 square-icon wow zoomIn"
+                  data-wow-delay="0.6s"
+                >
+                  <span class="rotate-box-icon"
+                    ><i class="fa fa-clock-o"></i
+                  ></span>
+                  <div class="rotate-box-info">
+                    <h4>Depuis quand ?</h4>
+                    <p>
+                      Lassé des outils no-code c'est en juin 2021 que je
+                      m'inscris au boot camp proposé par la 3wrh. Avant cela
+                      j'ai réalisé des études de technico-commerciale spécialité
+                      biens et services industriels
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- End rotate box-1 -->
+
+        <div class="extra-space-l"></div>
+
+        <!-- Begin page header-->
+        <div class="page-header-wrapper">
+          <div class="container">
+            <div
+              class="page-header text-center wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <h4>Mes compétences :</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End page header-->
+
+        <!-- Begin Our Skills -->
+        <div class="our-skills">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="skill-bar wow slideInLeft" data-wow-delay="0.2s">
+                  <div class="progress-lebel">
+                    <h6>HTML & CSS</h6>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 75%"
+                    ></div>
                   </div>
                 </div>
-                <div class="timeline-content">
-                  <h5 class="title">Developpeur web</h5>
-                  <p class="description">
-                    C'est en 2021 que je découvre la programmation, lasse des
-                    outils no-code je decide de me former aux langages du web et
-                    pour cela je m'inscris au boot camp développeur full stack
-                    proposé par les 3 wrh
-                  </p>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="skill-bar wow slideInRight" data-wow-delay="0.2s">
+                  <div class="progress-lebel">
+                    <h6>WordPress</h6>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 60%"
+                    ></div>
+                  </div>
                 </div>
               </div>
-              <!-- end experience section-->
+
+              <div class="col-sm-6">
+                <div class="skill-bar wow slideInLeft" data-wow-delay="0.4s">
+                  <div class="progress-lebel">
+                    <h6>PHP</h6>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="skill-bar wow slideInRight" data-wow-delay="0.4s">
+                  <div class="progress-lebel">
+                    <h6>Javascript</h6>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- End Our Skill -->
+      </section>
+      <!-- End about section -->
+
+      <!-- Begin cta -->
+      <section id="cta-section">
+        <div class="cta">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9">
+                <h1>Telecharger mon CV</h1>
+                <p>
+                  Je vous mets à disposition mon cv en PDF pour que vous
+                  puissiez voir mes expériences.
+                </p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="cta-btn wow bounceInRight" data-wow-delay="0.4s">
+                  <a
+                    class="btn btn-default btn-lg"
+                    href="https://drive.google.com/file/d/1z_0LlqnlOZE_Nvvg1zD7BcfzNhSLmEKF/view"
+                    target="_blank"
+                    role="button"
+                    >Télécharger</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </section>
+      <!-- End cta -->
+
+      <!-- Begin Portfolio -->
+      <section id="portfolio-section" class="page bg-style1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="portfolio">
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                  <div class="container">
+                    <div
+                      class="page-header text-center wow fadeInDown"
+                      data-wow-delay="0.4s"
+                    >
+                      <h2>Mes projets</h2>
+                      <div class="devider"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End page header-->
+                <div class="portfoloi_content_area">
+                  <div class="portfolio_menu" id="filters">
+                    <ul>
+                      <li class="active_prot_menu">
+                        <a href="#porfolio_menu" data-filter="*">Tout</a>
+                      </li>
+                      <li>
+                        <a href="#porfolio_menu" data-filter=".websites"
+                          >Site web</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#porfolio_menu" data-filter=".appsDevelopment"
+                          >Application</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#porfolio_menu" data-filter=".responsive"
+                          >Responsive</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portfolio_content">
+                    <div class="row" id="portfolio">
+                      <div class="col-xs-12 col-sm-4 appsDevelopment websites">
+                        <div class="portfolio_single_content">
+                          <img
+                            src="img\portfolio\lolesportstats.gif"
+                            alt="title"
+                          />
+                          <div>
+                            <a href="#">LoLEsportStats</a>
+                            <span>Subtitle</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 websites responsive">
+                        <div class="portfolio_single_content">
+                          <img src="img\portfolio\seoul tour.gif" alt="title" />
+                          <div>
+                            <a href="#">SeoulTour</a>
+                            <span
+                              >SeoulTour est le site d'un guide de voyage basé à
+                              Seoul. Il lui permet d'afficher ses tarifs et
+                              d'ecrire des articles sur la vie à seoul.</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xs-12 col-sm-4 appsDevelopment responsive"
+                      >
+                        <div class="portfolio_single_content">
+                          <img src="img\portfolio\tipcalc.png" alt="title" />
+                          <div>
+                            <a href="#">Hand Shots</a>
+                            <span
+                              >TipCalculator est un outil permetant de calculer
+                              le pourboire lorsque vous etes au restaurant avec
+                              plusieurs personnes par exemple.</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+      <!-- End portfolio -->
+      <!--
+
+-->
+      <!-- Begin social section -->
+      <section id="social-section">
+        <!-- Begin page header-->
+        <div class="page-header-wrapper">
+          <div class="container">
+            <div
+              class="page-header text-center wow fadeInDown"
+              data-wow-delay="0.4s"
+            >
+              <h2>Où me trouver ?</h2>
+              <div class="devider"></div>
+              <p class="subtitle">Vous pouvez me trouver sur ces réseaux :</p>
+            </div>
+          </div>
+        </div>
+        <!-- End page header-->
+
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a
+                href="#"
+                class="rotate-box-1 square-icon text-center wow zoomIn"
+                data-wow-delay="0.3s"
+                ><span class="rotate-box-icon"
+                  ><i class="fa fa-linkedin"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rotate-box-1 square-icon text-center wow zoomIn"
+                data-wow-delay="0.4s"
+                ><span class="rotate-box-icon"
+                  ><i class="fa fa-github"></i></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End social section -->
+
+      <!-- Begin contact section -->
+      <section
+        id="contact-section"
+        class="page text-white parallax"
+        data-stellar-background-ratio="0.5"
+        style="background-image: url(img/map-bg.jpg)"
+      >
+        <div class="cover"></div>
+
+        <!-- Begin page header-->
+        <div class="page-header-wrapper">
+          <div class="container">
+            <div
+              class="page-header text-center wow fadeInDown"
+              data-wow-delay="0.4s"
+            >
+              <h2>Contact</h2>
+              <div class="devider"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End page header-->
+
+        <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="contact-info">
+                  <h4>Mes coordonnées</h4>
+                  <ul class="contact-address">
+                    <li><i class="fa fa-map-marker fa-lg"></i> Lille</li>
+                    <li>
+                      <i class="fa fa-envelope"></i> romain.benyoucef@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="contact-form">
+                  <h4>Me contacter</h4>
+                  <form role="form">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-lg"
+                        placeholder="Votre nom"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control input-lg"
+                        placeholder="Votre e-mail"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-lg"
+                        placeholder="Objet"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control input-lg"
+                        rows="5"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+                    <button
+                      class="btn wow bounceInRight"
+                      data-wow-delay="0.8s"
+                      disabled
+                    >
+                      Envoyer
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </section>
+      <!-- End contact section -->
+
+      
+
+    <!-- Plugins JS -->
+    <script src="inc/jquery/jquery-1.11.1.min.js"></script>
+    <script src="inc/bootstrap/js/bootstrap.min.js"></script>
+    <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="inc/stellar/js/jquery.stellar.min.js"></script>
+    <script src="inc/animations/js/wow.min.js"></script>
+    <script src="inc/waypoints.min.js"></script>
+    <script src="inc/isotope.pkgd.min.js"></script>
+    <script src="inc/classie.js"></script>
+    <script src="inc/jquery.easing.min.js"></script>
+    <script src="inc/jquery.counterup.min.js"></script>
+    <script src="inc/smoothscroll.js"></script>
+
+    <!-- Theme JS -->
+    <script src="js/theme.js"></script>
   </body>
 </html>
