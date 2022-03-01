@@ -554,8 +554,7 @@ a.rotate-box-2:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
-.portfolio_content {
-}
+
 .portfolio_single_content {
   position: relative;
   top: 0;
@@ -564,6 +563,7 @@ a.rotate-box-2:hover {
   z-index: 5;
   margin-bottom: 30px;
   overflow: hidden;
+  border: 1px solid #f5f5f5;
 }
 .portfolio_single_content:hover img {
   -o-transform: scale(2);
